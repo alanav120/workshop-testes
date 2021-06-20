@@ -8,22 +8,26 @@ Funcionalidade: Carrinho de compras
 
   Contexto:
     Dado que estou logada com credenciais "válidas"
-
+    
+    @adicionar_item
     Cenário: Adicionar um item ao carrinho
       Dado que estou na tela de um produto
       Quando adiciono o produto no carrinho
       Então vejo uma mensagem de confirmação
-
+      
+    @escolher_endereco
     Cenário: Ser possível escolher um endereço de entrega
       Dado estou na tela de resumo da compra
       Quando avançar para a tela de endereço
       Então vejo endereços de entrega disponíveis
-
+    
+    @escolher_pagamento
     Cenário: Ser possível escolher uma opção de pagamento
       Dado que estou na tela de envio do produto
       Quando avançar para a tela de pagamento
       Então vejo as opções de pagamento disponíveis
-
+    
+    @comprar_item
     Cenário: Comprar um item
       Dado que tenha escolhido um produto
       Quando fizer a compra
