@@ -8,9 +8,9 @@ Quando('colocar credenciais {string}') do |credencias|
 
     case credencias
         when 'validas'
-            @login.fazer_login 'ailana_001@teste.com', '123456789'
+            @login.fazer_login 'abcds@teste.com', '123456789'
         when 'invalidas'
-            @login.fazer_login 'ailana_001@teste.com', '99999999'
+            @login.fazer_login 'abcds@teste.com', '99999999'
     end
     sleep(3)
 end                                                                          
