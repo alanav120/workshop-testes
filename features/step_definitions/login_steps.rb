@@ -6,9 +6,9 @@ end
 Quando('colocar credenciais {string}') do |credencias|                           
     @login = LoginPage.new
 
-    case credencias
+    case credenciais
         when 'validas'
-            @login.fazer_login 'abcds@teste.com', '123456789'
+            @login.fazer_login 'abcds@teste.com', 'G87HtAtK'
         when 'invalidas'
             @login.fazer_login 'abcds@teste.com', '99999999'
     end
